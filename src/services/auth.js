@@ -12,37 +12,37 @@ export const handleLogin = ({ password }) => {
   switch (password) {
     case 'funereus':
     return setUser({
-      charname: `peteCasso`,
+      charname: `peteC`,
       firstname: `Pete`,
       lastname: `Casso`
     })
     case 'dwile':
       return setUser({
-        charname: `sharonSharalike`,
+        charname: `sharonS`,
         firstname: `Sharon`,
         lastname: `Sharalike`
       })
       case 'lastage':
       return setUser({
-        charname: `brettCutler`,
+        charname: `brettC`,
         firstname: `Brett`,
         lastname: `Cutler`
       })
       case 'weatherly':
       return setUser({
-        charname: `lilacLabelle`,
+        charname: `lilacL`,
         firstname: `Liliac`,
         lastname: `Labelle`
       })
       case 'flintwinch':
       return setUser({
-        charname: `fionaFakes`,
+        charname: `fionaF`,
         firstname: `Fiona`,
         lastname: `Fakes`
       })
       case 'stormcrow':
         return setUser({
-          charname: `luigiLambrusco`,
+          charname: `luigiL`,
           firstname: `Luigi`,
           lastname: `Lambrusco`
         })
