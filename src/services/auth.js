@@ -8,22 +8,53 @@ export const getUser = () =>
 const setUser = user =>
   window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
 
-export const handleLogin = ({ username, password }) => {
-  if (username === `john` && password === `pass`) {
+export const handleLogin = ({ password }) => {
+  switch (password) {
+    case 'funereus':
     return setUser({
-      username: `john`,
-      name: `Johnny`,
-      email: `johnny@example.org`,
+      charname: `peteCasso`,
+      firstname: `Pete`,
+      lastname: `Casso`
     })
+    case 'dwile':
+      return setUser({
+        charname: `sharonSharalike`,
+        firstname: `Sharon`,
+        lastname: `Sharalike`
+      })
+      case 'lastage':
+      return setUser({
+        charname: `brettCutler`,
+        firstname: `Brett`,
+        lastname: `Cutler`
+      })
+      case 'weatherly':
+      return setUser({
+        charname: `lilacLabelle`,
+        firstname: `Liliac`,
+        lastname: `Labelle`
+      })
+      case 'flintwinch':
+      return setUser({
+        charname: `fionaFakes`,
+        firstname: `Fiona`,
+        lastname: `Fakes`
+      })
+      case 'stormcrow':
+        return setUser({
+          charname: `luigiLambrusco`,
+          firstname: `Luigi`,
+          lastname: `Lambrusco`
+        })
+    default:
   }
-
   return false
 }
 
 export const isLoggedIn = () => {
   const user = getUser()
 
-  return !!user.username
+  return !!user.charname
 }
 
 export const logout = callback => {
