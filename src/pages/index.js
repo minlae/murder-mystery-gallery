@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import { navigate, Link } from "gatsby"
 import { getUser, isLoggedIn } from "../services/auth"
 
 //remember run: npm run develop
@@ -12,12 +12,7 @@ export default function Home() {
     <Layout>
       <h1>Greetings {isLoggedIn() ? getUser().firstname : "Friend"}!</h1>
       <p>
-        {isLoggedIn() ? (
-          <>
-            You are logged in, so check your{" "}
-            <Link to="/app/profile">profile</Link>
-          </>
-        ) : (
+        {isLoggedIn() ? navigate(`/app/${getUser().charname}`) : (
           <>
             You should <Link to="login">log in</Link> to see restricted
             content

@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Murder at the Art Gallery",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-sass`],
 };

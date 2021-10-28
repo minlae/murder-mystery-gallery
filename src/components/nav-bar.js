@@ -20,10 +20,7 @@ export default function NavBar() {
     >
       <span>{greetingMessage}</span>
       <nav>
-        <Link to="/">Home</Link>
-        {` `}
-        <Link to="/app/profile">Profile</Link>
-        {` `}
+        Event date: Fri, Nov 12th 6:00pm {"  "}
         {isLoggedIn() ? (
           <a
             href="/"

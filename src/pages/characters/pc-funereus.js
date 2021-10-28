@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Header from "../../components/Header"
 
 // const test = "test4"
 
@@ -46,8 +45,7 @@ class Funereus extends React.Component {
 
   render() {
     return(
-      <>
-      <Header charName="Pete Casso" />
+      <>]
       {/* <button onClick={this.handleClick}>{test}</button> */}
       <nav>
         <button onClick={()=>this.showModule("plot")}>Plot Summary</button>
