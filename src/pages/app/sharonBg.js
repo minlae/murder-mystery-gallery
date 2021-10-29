@@ -20,7 +20,26 @@ const SharonBg = () => {
         <p>The two of you are quite a contrast. He is usually dressed in chef gear while you like fashionable clothes. You’ve even begun wearing spiked heels which sometimes damage the clients’ floors. You jokingly (at least you made it sound like a joke) said to him that, “It would be a real kick to be around Libby LaBelle again.”</p>
       </section>
       <section id="dialogue">
-
+        <div className="order">1</div>
+        <h3>Say this when asked to speak:</h3>
+        <p>It’s too bad that Libby LaBelle is dead, but we shouldn’t let that dampen this wonderful occasion. Pete Casso’s new masterpiece, “Black Cat at Midnight,” was a highlight of the reception. Please excuse the confusion about the timing. The gallery had a schedule conflict.</p>
+        <p>While I was introducing Luigi and Pete to take a bow, Libby kept yelling out nasty comments about Luigi’s cuisine and Pete’s art—the same type of comments she’d written in her columns in “The Graphic News.”</p>
+        <p>When she approached me in the middle of my introductions, and with a glass of wine in her hand, it was apparent that she’s had too much to drink. That’s when she began to stagger.</p>
+        <p>She fell to the floor and several people tried to help her. Someone called an ambulance and Libby was whisked away so that we could continue with this fantastic event that I’d planned.</p>
+        <p>Who would have predicted that Pete’s explanation of his masterpiece would be interrupted not only by Fiona Fakes, but also by that smarmy reunion of Lilac LaBelle and Brett Cutler? If they had so much affection for each other, why hadn’t they been in contact with each other? If you ask me, there’s more to that story—especially since Libby and Lilac look so much alike.</p>
+        <p>That’s all I have to say. I’ve put a lot of work into this event and my feet are killing me.</p>
+      </section>
+      <section id="additional">
+        <h3>Additional:</h3>
+        <p>As you are circulating among the guests, be professional and show very little emotion. Tell people that you will do whatever it takes to achieve your goals.</p>  
+        <p>When you talk to guests who are drinking wine, say that Luigi knows everything there is to know about wine. You depend upon him to select the perfect vintages for the events that you plan.</p>
+        <p>Make off the cuff comments about how difficult it is to be on your feet all night when you are coordinating your events. Say to people that you’ve changed from spike heeled shoes to flat-soled shoes because, “Those shoes were killing me.”</p>
+      </section>
+      <section id="clues">
+        <h3>CLUES:</h3>
+        <h4>(The following information about you is in the clues that have been given to the guests.)</h4>
+        <p>Have you noticed that Sharon Sharalike always dresses professionally, and with style? I’ve heard that a client of hers once complained that the stiletto heels she wore to an exhibit damaged the hardwood floors of the client’s gallery.</p>
+        <p>A few years ago, Sharon Sharalike was one of the top event planners on the East Coast. Libby LaBelle gave a scathing review to a gallery opening she’d planned and I heard that her business suffered. What a coincidence that they both ended up here.</p>
       </section>
     </CharLayout>
   )
