@@ -1,8 +1,8 @@
 import * as React from "react"
 import MenuCards from "./menu-cards"
-const CharLayout = ({ children }) => (
+const CharLayout = ({ children, plotLink, charBg }) => (
   <>
-    <MenuCards />
+    <MenuCards plotLink={plotLink} charBg={charBg} />
     {children}
   </>
 )

@@ -1,4 +1,5 @@
 import * as React from "react"
+import "../styles/global.scss"
 import Layout from "../components/layout"
 import { navigate, Link } from "gatsby"
 import { getUser, isLoggedIn } from "../services/auth"
@@ -10,6 +11,7 @@ import { getUser, isLoggedIn } from "../services/auth"
 export default function Home() {
   return (
     <Layout>
+      <main>
       <h1>Greetings {isLoggedIn() ? getUser().firstname : "Friend"}!</h1>
       <p>
         {isLoggedIn() ? navigate(`/app/${getUser().charname}`) : (
@@ -19,6 +21,7 @@ export default function Home() {
           </>
         )}
       </p>
+      </main>
     </Layout>
   )
 }

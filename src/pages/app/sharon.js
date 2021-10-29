@@ -3,13 +3,13 @@ import PlotSummary from "../../components/plotSummary"
 import CharLayout from "../../components/charlayout"
 
 
-const PeteC = () => { 
+const Sharon = () => { 
   return (
     <>
-      <CharLayout>
-        <PlotSummary char="pete" fullName="Pete Casso" charLink="peteBg"/>
+      <CharLayout plotLink="sharon" charBg="sharonBg">
+        <PlotSummary char="sharon" fullName="Sharon Sharalike" charLink="sharonBg"/>
       </CharLayout>
     </>
   )
 }
-export default PeteC
+export default Sharon
