@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import PrivateRoute from "../components/privateRoute"
 import Home from "./index"
 import SharonS from "./app/sharonS"
+import SharonBg from "./app/sharonBg"
+import Volunteer from "./app/Volunteer"
 // import PeteC from "./app/peteC"
 // import BrettC from "./app/brettC"
 // import LilacL from "./app/lilacL"
@@ -16,6 +18,8 @@ const App = () => (
     <Router>
       <Router path="/" component={Home} />
       <PrivateRoute path="/app/sharonS" component={SharonS} />
+      <PrivateRoute path="/app/sharonBg" component={SharonBg} />
+      <PrivateRoute path="/app/volunteer" component={Volunteer} />
       <Login path="login" />
     </Router>
   </Layout>

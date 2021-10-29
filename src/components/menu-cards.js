@@ -1,7 +1,8 @@
 import * as React from "react"
-import PlotSummary from "./plotSummary"
+import { Link } from "gatsby"
 
 class MenuCards extends React.Component {
+
 
   render() {
     //if you are on the page, it should no longer be a link
@@ -14,16 +15,14 @@ class MenuCards extends React.Component {
     return(
       <>
       <nav>
-        <ul>
-          <li id="plot" class="module">
-             <PlotSummary />
-          </li>
-          <li>Speaking Order</li>
-          <li>What to Say</li>
-          <li id="background" class="module">Background</li>
-          <li>Clues</li>
-        </ul>
-      </nav>
+          {/* Plot summary is the main page */}
+          {/* Use hidden modules for the sub-menus */}
+          <ul>
+            <li><Link to="/app/sharonS">Plot Summary</Link></li>
+            <li><Link to="/app/sharonBg">Character Details</Link></li>
+            <li><Link to="/app/volunteer">Volunteer Info</Link></li>
+          </ul>
+        </nav>
       </>
 
     )

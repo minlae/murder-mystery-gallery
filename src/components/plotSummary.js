@@ -1,14 +1,14 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 
 class PlotSummary extends React.Component {
 
   render() {
-
     const char = this.props.char;
     const fullName = this.props.fullName;
-
-  return (
+    const charLink = this.props.charLink;
+    return (
         <section id="plot" className="module">
         <h3>Plot Summary</h3>
         <p>Libby Labelle, art critic for the influential "Graphic News," used her vitriolic columns to destroy the careers of many artists. A good review from Libby meant instant success. A bad review could signal the end of the line for the career of even the most talented individual.</p>
@@ -17,20 +17,36 @@ class PlotSummary extends React.Component {
         <p>Who would have suspected that the review would never be printed? For, in the middle of an acerbic attack on both the artwork and the occasion, Libby collapsed in a heap on the floor of the gallery, her worrisome word processor silenced forever.</p>
         <p>Did someone take the opportunity to do away with her explosive expletives? And, what past unknown indiscretions could have prompted the passion? It would take a palette of investigative skills to solve the case and identify the murderer.</p>
         {(char !== "investigator") ? (
-          <h3>You are portraying {fullName}, a suspect along with the following...</h3>
+          <h3>You are portraying <Link to={`/app/${charLink}`}>{fullName}</Link>, one of the below suspects...</h3>
         ) : ( <h3>You must apprehend one of these suspects</h3> )
         }
-          <h4>Lilac Labelle, Libby's first cousin</h4>
-          <p>
-            Libby and Lilac grew up together and were inseparable until they fell in love with the same man, Brett Cutler. Libby won the man, but how long would the victory last, and what would be the repercussions?
+        <h4>Lilac Labelle, Libby's first cousin</h4>
+        <p>
+          Libby and Lilac grew up together and were inseparable until they fell in love with the same man, Brett Cutler. Libby won the man, but how long would the victory last, and what would be the repercussions?
         </p>
-        <p>You and Luigi have become close friends and confidantes. He calls you “Sharini.” By working together, the two of you have been able to make a comeback.</p>
-        <p>Nine months ago, you were retained by the Creative Connection Art Gallery to plan the “preview” of an exhibit by impressionistic artist Pete Casso. You recommended that Luigi do the catering. Both of you suspected that Libby LaBelle would be there because she wouldn’t be able to pass up another opportunity to write a snarky review of Casso’s work.</p>
-        <p>Luigi doesn’t like Libby LaBelle, but he is a realist. He’s willing to try to get back into her good graces because she knows what a bad review from Libby could mean. You, on the other hand, still hold a huge grudge. You strongly dislike Libby LaBelle and have even suggested that Luigi put something in the wine he serves to her. Luigi thought you were kidding, but you were deadly serious.</p>
-        <p>The two of you are quite a contrast. He is usually dressed in chef gear while you like fashionable clothes. You’ve even begun wearing spiked heels which sometimes damage the clients’ floors. You jokingly (at least you made it sound like a joke) said to him that, “It would be a real kick to be around Libby LaBelle again.”</p>
+        <h4>Brett Cutler, billionaire art dealer</h4>
+        <p>
+          He couldn't decide between Libby and Lilac, but Libby eventually won his affections. When she tossed him into the streets penniless, he was determined to return and show Libby what she had missed. How would he have gone about it?
+        </p>
+        <h4>Pete Casso, impressionist artist</h4>
+        <p>
+          His work has been extolled by art critics everywhere. Only Libby LaBelle called him a "charlatan." It's been rumored that Libby's reviews cost Casso millions. Would he have been able to control his artistic temperament?
+        </p>
+        <h4>Fiona Fakes, art forger</h4>
+        <p>
+          A negative review by Libby put an end to her budding career as a legitimate fine artist. Then, last week in her column, Libby promised to expose Fiona's black market activities. Was Fiona's solution as simple as black and white?
+        </p>
+        <h4>Sharon Sharalike, event planner</h4>
+        <p>
+          She's been rebuilding her career after Libby blasted her planning abilities several years ago. What would Libby have said about the event at the gallery? Could Sharon have afforded another bad review from her nemesis?
+        </p>
+        <h4>Luigi Lambrusco, Italian chef</h4>
+        <p>
+          His cuisine and knowledge of wine made him a rising culinary star until he catered an event at which Libby was present. When Libby scoffed at his food fabrications, his business suffered. Could another such cut have been fatal?
+        </p>
         </section>
-  )
-}
+      )
+    }
 }
 
 export default PlotSummary

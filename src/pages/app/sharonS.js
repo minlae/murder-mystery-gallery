@@ -1,6 +1,7 @@
 import * as React from "react"
-import { hidden } from "../../styles/charinfo.modules.scss"
 import PlotSummary from "../../components/plotSummary"
+import CharLayout from "../../components/charlayout"
+
 
 class SharonS extends React.Component { 
   state = {
@@ -42,16 +43,12 @@ class SharonS extends React.Component {
   render() {
     return (
       <>
-        <nav>
-          <button onClick={()=>this.showModule("plot")}>Plot Summary</button>
-          <button onClick={()=>this.showModule("volunteer")}>Volunteer Info</button>
-          <button onClick={()=>this.showModule("character")}>Character</button>
-        </nav>
+        <CharLayout>
         <section id="plot" className="module">
-          <PlotSummary char="sharon" fullName="Sharon Sharalike" showChar={this.showModule}/>
+          <PlotSummary char="sharon" fullName="Sharon Sharalike" charLink="sharonBg"/>
           {/* Include char you'll be playing as part of plot summary */}
         </section>
-        <section id="volunteer" className="module hidden">
+        {/* <section id="volunteer" className="module hidden">
           <h3>Volunteer Info</h3>
         </section>
         <section id="order" className="module hidden">
@@ -59,14 +56,15 @@ class SharonS extends React.Component {
           <p>1</p>
         </section>
         <section id="character" className="module hidden">
-          {/* Include on page:  */}
+          {/* Include on page:  
           <h3>Dialogue</h3>
           <p>General character summary</p>
         </section>
         <section id="clues" className="module hidden">
           <h3>Clues</h3>
           <p>General character summary</p>
-        </section>
+        </section> */}
+        </CharLayout>
       </>
     )
   }
