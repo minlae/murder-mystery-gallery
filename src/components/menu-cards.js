@@ -8,6 +8,7 @@ class MenuCards extends React.Component {
     const plotLink = this.props.plotLink;
     const charBg = this.props.charBg;
     
+    console.log(plotLink, charBg);
     return(
       <>
       <nav>

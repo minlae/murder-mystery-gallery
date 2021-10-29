@@ -3,7 +3,7 @@ import CharLayout from "../../components/charlayout"
 
 const SharonBg = () => {
   return (
-    <CharLayout>
+    <CharLayout charBg="sharonBg" plotLink="sharonS">
       <section id="character" className="module">
         <h3>Character Background</h3>
         <p>You, Sharon Sharalike, are an event planner who’s been retained by the Creative Connection Art Gallery to coordinate the preview of impressionistic artist Pete Casso’s upcoming exhibit.</p>

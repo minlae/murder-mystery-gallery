@@ -1,9 +1,18 @@
 import * as React from "react"
 import CharLayout from "../../components/charlayout"
+import { getUser } from "../../services/auth"
 
-const Volunteer = () => {
+class Volunteer extends React.Component {
+  
+  render() 
+  {
+    //need to pass props to CharLayout depending on character
+    //charBg and plotLink
+    const charPage = getUser().charBg;
+    const plotPage = getUser().charname;
+
   return (
-    <CharLayout>
+    <CharLayout charBg={charPage} plotLink={plotPage}>
       <section id="volunteer" className="module">
         <h3>Thanks for volunteering to role play! Here's what expected of you.</h3>
         <ol>
@@ -24,6 +33,8 @@ const Volunteer = () => {
         <p>Please come in character and arrive 15 minutes early so that any remaining questions can be answered.</p>
       </section>
     </CharLayout>
-  )} 
+  )
+}
+} 
 
   export default Volunteer

@@ -14,37 +14,43 @@ export const handleLogin = ({ password }) => {
     return setUser({
       charname: `peteC`,
       firstname: `Pete`,
-      lastname: `Casso`
+      lastname: `Casso`,
+      charBg: `peteBg`
     })
     case 'dwile':
       return setUser({
         charname: `sharonS`,
         firstname: `Sharon`,
-        lastname: `Sharalike`
+        lastname: `Sharalike`,
+        charBg: `sharonBg`
       })
       case 'lastage':
       return setUser({
         charname: `brettC`,
         firstname: `Brett`,
-        lastname: `Cutler`
+        lastname: `Cutler`,
+        charBg: `brettBg`
       })
       case 'weatherly':
       return setUser({
         charname: `lilacL`,
         firstname: `Liliac`,
-        lastname: `Labelle`
+        lastname: `Labelle`,
+        charBg: `lilacBg`
       })
       case 'flintwinch':
       return setUser({
         charname: `fionaF`,
         firstname: `Fiona`,
-        lastname: `Fakes`
+        lastname: `Fakes`,
+        charBg: `fionaBg`
       })
       case 'stormcrow':
         return setUser({
           charname: `luigiL`,
           firstname: `Luigi`,
-          lastname: `Lambrusco`
+          lastname: `Lambrusco`,
+          charBg: `luigiBg`
         })
     default:
   }
