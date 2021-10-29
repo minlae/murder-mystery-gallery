@@ -1,5 +1,5 @@
 import * as React from "react"
-import CharLayout from "../../../components/charlayout.js"
+import CharLayout from "../charlayout.js"
 
 const SharonBg = () => {
   return (

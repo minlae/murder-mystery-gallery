@@ -1,5 +1,5 @@
-import React from "react"
-import { Link, navigate } from "gatsby"
+import * as React from "react"
+import { navigate } from "gatsby"
 import { getUser, isLoggedIn, logout } from "../services/auth"
 
 export default function NavBar() {

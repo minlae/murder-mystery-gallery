@@ -1,12 +1,10 @@
 import * as React from "react"
-import CharLayout from "../components/charlayout"
-import Layout from "../components/layout"
+import CharLayout from "./charlayout"
+import Layout from "./layout"
 
 
 class PlotSummary extends React.Component {
-  componentDidMount() {
-    console.log(this.props.path)
-  }
+
   render() {
   return (
     <Layout>
