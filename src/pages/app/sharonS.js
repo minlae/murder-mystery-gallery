@@ -1,5 +1,6 @@
 import * as React from "react"
 import { hidden } from "../../styles/charinfo.modules.scss"
+import PlotSummary from "../../components/plotSummary"
 
 class SharonS extends React.Component { 
   state = {
@@ -42,19 +43,16 @@ class SharonS extends React.Component {
     return (
       <>
         <nav>
-          <ul>
-            <li onClick={()=>this.showModule("plot")}>Plot Summary</li>
-            <li onClick={()=>this.showModule("volunteer")}>Volunteer Info</li>
-            <li onClick={()=>this.showModule("character")}>Character</li>
-          </ul>
+          <button onClick={()=>this.showModule("plot")}>Plot Summary</button>
+          <button onClick={()=>this.showModule("volunteer")}>Volunteer Info</button>
+          <button onClick={()=>this.showModule("character")}>Character</button>
         </nav>
         <section id="plot" className="module">
-          Plot Summary
+          <PlotSummary char="sharon" fullName="Sharon Sharalike" showChar={this.showModule}/>
           {/* Include char you'll be playing as part of plot summary */}
         </section>
         <section id="volunteer" className="module hidden">
-          <h3>Volunteer</h3>
-          <p>General character summary</p>
+          <h3>Volunteer Info</h3>
         </section>
         <section id="order" className="module hidden">
           <h3>Order</h3>
