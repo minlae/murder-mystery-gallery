@@ -1,8 +1,8 @@
 import React from "react"
 import MenuCards from "./menu-cards"
-const CharLayout = ({ children, char }) => (
+const CharLayout = ({ children, page }) => (
   <>
-    <MenuCards char={char} />
+    <MenuCards char={char} page={page} />
     {children}
   </>
 )

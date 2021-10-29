@@ -3,22 +3,38 @@ import { Link } from "gatsby"
 
 class MenuCards extends React.Component {
   render() {
-    //navigation depends on the character. the link will have to link to a variable. Or reconfigure if that's not possible
-    //first get it working for Sharon. Where does it link to? Got it!
-    ///app/characterBgs/sharonBg
+    //if you are on the page, it should no longer be a link
+    //how do you know if you are on the page?
     const charBg = this.props.char;
-    // console.log(`props: ${JSON.stringify(charBg)}`);
+    const page = this.props.page;
+    // const propsExist = () => {
+    //   return !!charBg
+    // }
 
     return(
       <>
       <nav>
         <ul>
           <li>
-            <Link to={`../../app/characterBgs/${charBg}`}>Plot Summary</Link>
+            {/* {propsExist() ? 
+            (
+              <> */}
+                <Link to={`../../plotSummary`}>Plot Summary</Link>
+              {/* </>
+            ) : ( <> Plot summary</>)
+            } */}
           </li>
           <li>Speaking Order</li>
           <li>What to Say</li>
-          <li>Character</li>
+          <li>
+            {/* {propsExist() ? 
+            (
+              <> */}
+                <Link to={`../../app/characterBgs/${charBg}`}>Background</Link>
+              {/* </>
+            ) : ( <> Character Background</>) */}
+            {/* } */}
+            </li>
           <li>Clues</li>
         </ul>
       </nav>

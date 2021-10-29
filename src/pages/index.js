@@ -22,36 +22,3 @@ export default function Home() {
     </Layout>
   )
 }
-// class IndexPage extends React.Component {
-
-//   myInput = React.createRef();
-//   //functions
-//   enterMyPage = (e) => {
-//     e.preventDefault();
-//     const myCodeword = this.myInput.current.value;
-//     const acceptedCodes = ["investigator", "pc-funereus", "ss-dwile", "bc-lastage", "ll-weatherly", "ff-flintwinch", "ll-stormcrow"];
-
-//     if (acceptedCodes.includes(myCodeword)) {
-//       navigate(`characters/${myCodeword}`);
-//     } else {
-//       navigate(`notfound`);
-//     }
-//   }
-//   render() {
-//     return (
-//     <>
-//       <main style={pageStyles}>
-//         <title>Murder at the Art Gallery</title>
-//         <h1 className={headingStyles}>Welcome, Friend</h1>
-//         <form onSubmit={this.enterMyPage}>
-//           <p className={paragraphStyles}>Please enter your codeword</p>
-//           <input type="text" required placeholder="codeword" ref={this.myInput}/>
-//           <button type="submit">Enter</button>
-//         </form>
-//       </main>
-//       </>
-//     )
-//   }
-// }
-
-// export default IndexPage
