@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Router } from "@reach/router"
 import Layout from "../components/layout"
 import PrivateRoute from "../components/privateRoute"
