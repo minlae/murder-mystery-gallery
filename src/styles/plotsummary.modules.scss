@@ -10,6 +10,11 @@
 
   .plot-summary {
     width: 50%;
+    margin-top: 8%;
+
+    h1 {
+      margin-bottom: 25px;
+    }
   }
 
   .characters {
@@ -36,10 +41,22 @@
   .charProfile {
     display: flex;
 
+    .profileTitle {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+
     h3 {
       margin: 0;
       margin-top: 15px;
-      margin-left: 10px;
+      letter-spacing: 1px;
+    }
+    .slogan {
+      font-weight: $regular;
+      font-style: italic;
+      font-size: $mediumFont;
+      margin: 0;
     }
   }
 }

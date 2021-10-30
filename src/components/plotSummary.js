@@ -94,7 +94,10 @@ class PlotSummary extends React.Component {
                 backgroundRepeat: `no-repeat`,
                 backgroundPosition: `center`
                 }}></div>
-                  <h3><Link to={`/app/${charLink}`}>{fullName}</Link>,<br/> {characters[0].slogan}</h3>
+                <div className="profileTitle">
+                  <h3><Link to={`/app/${charLink}`}>{fullName}</Link></h3>
+                  <p className="slogan">{characters[0].slogan}</p>
+                </div>
               </div>
               <p>{characters[0].desc}</p>
             </div>

@@ -5,15 +5,26 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230b0b0b' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-h1,
-h2 {
+h1 {
   font-family: $displayFont;
+  font-size: $largestFont;
+  margin: $standardTextMargin;
 }
 
-h3,
-h4 {
+h2 {
+  font-family: $displayFont;
+  font-size: $largeFont;
+}
+
+h3 {
   font-family: $sansFont;
   font-weight: $bold;
+  font-size: $largeFont;
+}
+
+h4 {
+  @extend h3;
+  font-size: $mediumFont;
 }
 
 a {
@@ -37,4 +48,5 @@ a {
   margin: 0 auto;
   padding: 20px;
   background-color: $page;
+  border-radius: 25px;
 }

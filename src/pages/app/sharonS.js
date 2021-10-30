@@ -2,7 +2,6 @@ import * as React from "react"
 import PlotSummary from "../../components/plotSummary"
 import CharLayout from "../../components/charlayout"
 
-
 const SharonS = () => { 
   return (
     <>
