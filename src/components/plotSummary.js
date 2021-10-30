@@ -94,19 +94,21 @@ class PlotSummary extends React.Component {
           {(fullName !== "investigator") ? (
             <>
               <div className="main">
-                {/* Will have to include image URL in state with other details */}
-                <h2>You are portraying:</h2>
-                <div className="charProfile">
-                  <div className="imageContainer" style={{backgroundImage: `url(${characters[0].image})`,
-                  backgroundRepeat: `no-repeat`,
-                  backgroundPosition: `center`
-                  }}></div>
-                  <div className="profileTitle">
-                    <h3><Link to={`/app/${charLink}`}>{fullName}</Link></h3>
-                    <p className="slogan">{characters[0].slogan}</p>
+                <Link className="char-bglink" to={`/app/${charLink}`}>
+                  {/* Will have to include image URL in state with other details */}
+                  <h2>You are portraying:</h2>
+                  <div className="charProfile">
+                    <div className="imageContainer" style={{backgroundImage: `url(${characters[0].image})`,
+                    backgroundRepeat: `no-repeat`,
+                    backgroundPosition: `center`
+                    }}></div>
+                    <div className="profileTitle">
+                      <h3><Link to={`/app/${charLink}`}>{fullName}</Link></h3>
+                      <p className="slogan">{characters[0].slogan}</p>
+                    </div>
                   </div>
-                </div>
-                <p>{characters[0].desc}</p>
+                  <p>{characters[0].desc}</p>
+                  </Link>
               </div>
               <h2>The other suspects are...</h2>
               <section className="others">
