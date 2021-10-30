@@ -9,32 +9,37 @@
   margin: 0 auto;
 
   .plot-summary {
-    width: 50%;
-    margin-top: 8%;
+    width: 47%;
+    margin-top: 0;
 
     h1 {
-      margin-bottom: 25px;
+      margin-bottom: 40px;
     }
   }
+}
 
-  .characters {
-    width: 44%;
+.characters {
+  width: 48%;
+  h2 {
+    margin-top: 40px;
+  }
+}
 
-    h2 {
-      margin-bottom: 5px;
-      margin-top: 5px;
-    }
+.main {
+  h2 {
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 
-  .main {
-    background-color: $accentA;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
-  }
+  background-color: $accentB;
+  padding: 20px;
+  border-radius: $borderRadius;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+  // margin-top: 10%;
+
   .imageContainer {
     border-radius: 50%;
-    background-color: lavender;
+    background-color: #fff;
     width: 80px;
     height: 80px;
   }
@@ -57,6 +62,43 @@
       font-style: italic;
       font-size: $mediumFont;
       margin: 0;
+    }
+    a {
+      color: $headings;
+    }
+  }
+}
+.others {
+  background-color: $accentC;
+  padding: 20px;
+  border-radius: $borderRadius;
+  h4 {
+    // color: $bgAccent;
+    margin-bottom: 2px;
+    color: $headings;
+  }
+  .slogan {
+    font-weight: $regular;
+    font-style: italic;
+    font-size: $smallFont;
+    margin: 0;
+  }
+  p {
+    font-size: $smallestFont;
+  }
+}
+
+.plotDownloads {
+  margin-top: 40px;
+  a,
+  h3 {
+    color: $fontColor;
+    font-family: $displayFont;
+  }
+  .dlpckg {
+    display: flex;
+    .file {
+      margin-right: 20px;
     }
   }
 }

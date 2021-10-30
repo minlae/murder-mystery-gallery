@@ -5,22 +5,22 @@ import { getUser, isLoggedIn, logout } from "../services/auth"
 export default function NavBar() {
   let greetingMessage = ""
   if (isLoggedIn()) {
-    greetingMessage = `Welcome, ${getUser().firstname}`
+    greetingMessage = `Files for ${getUser().firstname} ${getUser().lastname}`
   } else {
     greetingMessage = "Welcome, guest"
   }
   return (
-    <div
+    <div className="mainNav"
       style={{
         display: "flex",
         flex: "1",
         justifyContent: "space-between",
-        borderBottom: "1px solid #d1c1e0",
+        borderBottom: "1px solid #615960",
       }}
     >
       <span>{greetingMessage}</span>
       <nav>
-        Event date: Fri, Nov 12th 6:00pm {"  "}
+        Event date: Fri, Nov 12th 6:00pm {"  "} | {"  "} 
         {isLoggedIn() ? (
           <a
             href="/"
