@@ -115,7 +115,7 @@ class PlotSummary extends React.Component {
                   return (
                     <React.Fragment key={char.key}>
                       <h4 key={char.name}>{char.name}</h4>
-                      <p key={char.slogan} className="slogan">{char.slogan}</p>
+                      <p key={char.slogan} className="slogan">, {char.slogan}</p>
                       <p key={char.desc}>{char.desc}</p>
                     </React.Fragment>
                   )

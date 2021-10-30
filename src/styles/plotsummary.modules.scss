@@ -9,7 +9,7 @@
   margin: 0 auto;
 
   .plot-summary {
-    width: 44%;
+    width: 48%;
     margin-top: 0;
 
     h1 {
@@ -19,7 +19,7 @@
 }
 
 .characters {
-  width: 48%;
+  width: 44%;
   h2 {
     margin-top: 15%;
   }
@@ -76,15 +76,18 @@
     // color: $bgAccent;
     margin-bottom: 2px;
     color: $headings;
+    display: inline;
   }
   .slogan {
     font-weight: $regular;
     font-style: italic;
     font-size: $smallFont;
     margin: 0;
+    display: inline;
   }
   p {
     font-size: $smallestFont;
+    margin-top: 5px;
   }
 }
 
@@ -110,9 +113,9 @@
 }
 
 .palette-icon {
-  width: 250px;
+  width: 100px;
   position: absolute;
   bottom: 2%;
   left: 2%;
-  opacity: 0.7;
+  opacity: 0.3;
 }
