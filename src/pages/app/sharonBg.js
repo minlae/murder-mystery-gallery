@@ -5,7 +5,7 @@ const SharonBg = () => {
   return (
     <CharLayout charBg="sharonBg" plotLink="sharonS">
       <section id="character" className="module">
-        <h3>Character Background</h3>
+        <h2>Character Background</h2>
         <p>You, Sharon Sharalike, are an event planner who’s been retained by the Creative Connection Art Gallery to coordinate the preview of impressionistic artist Pete Casso’s upcoming exhibit.</p>
         <p>You began your career in event planning 25 years ago. You were hired by a New York company that organized large conventions and special events for big money clients. You worked you way up in both responsibility and compensation until, five years ago, starting your own event planning firm, “Events R Us.” You took several large clients with you and all was going well until, three years ago, when you were retained by an art gallery on the Upper West Side to organize an exhibit.</p>
         <p>Libby LaBelle, the art critic of “The Graphic News,” was at the event. You thought she was only there to review the exhibit, but she also took the opportunity to comment on your work. In her column, she wrote that the event was like “...watching an elephant snooze without all of the usual excitement.”</p>

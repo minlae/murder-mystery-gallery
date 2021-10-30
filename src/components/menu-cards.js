@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import "../styles/menucards.modules.scss"
 
 
 class MenuCards extends React.Component {
@@ -7,17 +8,30 @@ class MenuCards extends React.Component {
   render() {
     const plotLink = this.props.plotLink;
     const charBg = this.props.charBg;
-    
-    console.log(plotLink, charBg);
     return(
       <>
       <nav>
           {/* Plot summary is the main page */}
           {/* Use hidden modules for the sub-menus */}
-          <ul>
-            <li><Link to={`/app/${plotLink}`}>Plot Summary</Link></li>
-            <li><Link to={`/app/${charBg}`}>Character Details</Link></li>
-            <li><Link to="/app/volunteer">Volunteer Info</Link></li>
+          <ul className="menucard-nav">
+            <li>
+              <Link to={`/app/${plotLink}`}>
+                <div className="folder"></div>
+                <span className="copy">Plot Summary</span>
+              </Link>
+            </li>
+            <li>
+              <Link to={`/app/${charBg}`}>
+                <div className="folder"></div>
+                <span className="copy">Your Character</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/app/volunteer">
+                <div className="folder"></div>
+                <span className="copy">How to Play</span>
+              </Link>
+            </li>
           </ul>
         </nav>
       </>

@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  // border: 1px solid purple;
+  width: 100%;
+  margin: 0 auto;
+
+  .plot-summary {
+    width: 50%;
+  }
+
+  .characters {
+    width: 44%;
+
+    h2 {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  .main {
+    background-color: $accentA;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+  }
+  .imageContainer {
+    border-radius: 50%;
+    background-color: lavender;
+    width: 80px;
+    height: 80px;
+  }
+  .charProfile {
+    display: flex;
+
+    h3 {
+      margin: 0;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+  }
+}

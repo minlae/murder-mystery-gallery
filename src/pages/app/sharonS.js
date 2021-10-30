@@ -7,7 +7,7 @@ const SharonS = () => {
   return (
     <>
       <CharLayout plotLink="sharonS" charBg="sharonBg">
-        <PlotSummary char="sharon" fullName="Sharon Sharalike" charLink="sharonBg"/>
+        <PlotSummary fullName="Sharon Sharalike" charLink="sharonBg"/>
       </CharLayout>
     </>
   )
