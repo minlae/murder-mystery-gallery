@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Special+Elite&Zilla+Slab:wght@300&display=swap");
 
 //colours 4
 $background: #ffffff;
@@ -7,18 +7,21 @@ $accentA: #9c3567;
 $accentB: #d4bad1;
 // $accentC: #61596072;
 // $accentC: #7288758e;
-$accentC: #72887558;
 // $accentC: #72a87562;
+$accentC: #72887558;
+$accentD: #92a794;
 $page: #ffffff;
 // $folder: #8c1480;
 // $folder: #a62396;
 $folder: #72a875;
-$fontColor: #000;
+$fontColor: #464045;
 $link: #c908b0;
+
 $headings: #6b2161;
 
 $displayFont: "Special Elite", cursive;
 $sansFont: "Open Sans", sans-serif;
+$serifFont: "Zilla Slab", serif;
 
 $bold: 700;
 $regular: 400;

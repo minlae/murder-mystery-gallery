@@ -1,3 +1,169 @@
-.hidden {
-  display: none;
+@import "./variables.scss";
+
+//it's already got all the stuff from plotsummary
+
+.icon-title-container {
+  display: flex;
+
+  .img-container-title {
+    border-radius: 50%;
+    background-color: $accentB;
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/high-heels64.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+  }
+  h1 {
+    margin: 0;
+    margin-top: 6%;
+  }
+}
+
+.charbg-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+
+  .column1 {
+    width: 48%;
+    margin-top: 0;
+
+    p {
+      font-family: $serifFont;
+      font-size: $largeFont;
+    }
+  }
+
+  .column2 {
+    width: 44%;
+    // margin-top: 5%;
+    h2 {
+      margin-top: 15%;
+    }
+    .order {
+      background-color: $accentB;
+      // color: $accentB;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      top: -30px;
+      right: -20px;
+      box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+      // border: 2px solid $headings;
+
+      .info {
+        font-family: $sansFont;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        width: 75px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .number {
+        font-size: 30px;
+        margin-top: -10px;
+        font-weight: $bold;
+      }
+      .text {
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+    }
+
+    .callout {
+      position: relative;
+      h2 {
+        margin-bottom: 5px;
+        margin-top: 30px;
+      }
+
+      .link {
+        color: $fontColor;
+      }
+
+      background-color: $accentC;
+      padding: 20px;
+      border-radius: $borderRadius;
+      box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+
+      .imageContainer {
+        border-radius: 50%;
+        background-color: #fff;
+        width: 80px;
+        height: 80px;
+      }
+    }
+    aside.callout {
+      margin-top: 7%;
+      box-shadow: none;
+      h2 {
+        margin-top: 20px;
+      }
+    }
+    aside.callout.second {
+      background-color: $accentB;
+    }
+  }
+
+  .section3 {
+    background-color: $accentC;
+    padding: 20px;
+    border-radius: $borderRadius;
+    h4 {
+      // color: $bgAccent;
+      margin-bottom: 2px;
+      color: $headings;
+      display: inline;
+    }
+    .slogan {
+      font-weight: $regular;
+      font-style: italic;
+      font-size: $smallFont;
+      margin: 0;
+      display: inline;
+    }
+    p {
+      font-size: $smallestFont;
+      margin-top: 5px;
+    }
+  }
+
+  .downloads {
+    margin-top: 40px;
+    a,
+    h3 {
+      color: $fontColor;
+      font-family: $displayFont;
+    }
+    a:hover {
+      color: $link;
+    }
+    .dlpckg {
+      display: flex;
+      .file {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.outer-container-sharon {
+  position: relative;
+}
+.palette-icon {
+  width: 100px;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0.3;
 }

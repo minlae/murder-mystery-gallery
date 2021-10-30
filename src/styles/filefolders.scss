@@ -95,7 +95,7 @@
   margin: auto;
   position: relative;
   background-color: $folder;
-  border-radius: 0 3px 3px 3px;
+  border-radius: 10px 5px 5px 5px;
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
   margin-bottom: -8px;
   margin-top: 12px;
@@ -105,7 +105,7 @@
   content: "";
   width: 50%;
   height: 1.2em;
-  border-radius: 0 20px 0 0;
+  border-radius: 10px 20px 0 0;
   background-color: $folder;
   position: absolute;
   top: -0.3em;
