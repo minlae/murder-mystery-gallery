@@ -24,13 +24,13 @@ class Login extends React.Component {
     handleLogin(this.state)
     // move to login page ONLY if isLoggedIn is true
     if (isLoggedIn()) {
-      navigate(`/app/${getUser().charname}`)
+      navigate(`/app/volunteer`)
     } 
   }
 
   render() {
     if (isLoggedIn()) {
-      navigate(`/app/${getUser().charname}`)
+      navigate(`/app/volunteer`)
     } 
 
     return (

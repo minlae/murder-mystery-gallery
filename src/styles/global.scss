@@ -44,6 +44,14 @@ a {
   color: $link;
 }
 
+strong {
+  color: $folder;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .wrapper {
   max-width: 65%;
   margin: 0 auto;

@@ -6,8 +6,8 @@ import CharLayout from "../../components/charlayout"
 const PeteC = () => { 
   return (
     <>
-      <CharLayout>
-        <PlotSummary char="pete" fullName="Pete Casso" charLink="peteBg"/>
+      <CharLayout plotLink="peteC" charBg="peteBg">
+        <PlotSummary fullName="Pete Casso" charLink="peteBg"/>
       </CharLayout>
     </>
   )

@@ -6,14 +6,13 @@ import palette from "../../images/color-palette-512.png"
 const SharonBg = () => {
   return (
     <CharLayout charBg="sharonBg" plotLink="sharonS">
-      <div className="outer-container-sharon">
+      <div className="outer-container-charbg">
         <div className="charbg-container">
           <section className="column1">
             <div className="icon-title-container">
-              <div className="img-container-title"></div>
+              <div className="img-container-title sharon"></div>
               <h1>Sharon Sharalike</h1>
             </div>
-            <p>PROVIDE LINKS TO OTHER PARTS OF PAGE</p>
             <p>You, Sharon Sharalike, are an event planner who’s been retained by the Creative Connection Art Gallery to coordinate the preview of impressionistic artist Pete Casso’s upcoming exhibit.</p>
             <p>You began your career in event planning 25 years ago. You were hired by a New York company that organized large conventions and special events for big money clients. You worked you way up in both responsibility and compensation until, five years ago, starting your own event planning firm, “Events R Us.” You took several large clients with you and all was going well until, three years ago, when you were retained by an art gallery on the Upper West Side to organize an exhibit.</p>
             <p>Libby LaBelle, the art critic of “The Graphic News,” was at the event. You thought she was only there to review the exhibit, but she also took the opportunity to comment on your work. In her column, she wrote that the event was like “...watching an elephant snooze without all of the usual excitement.”</p>
@@ -31,7 +30,7 @@ const SharonBg = () => {
             <div className="callout">
               <div className="order">
                 <div className="info">
-                  <span className="text">order</span>
+                  <span className="text">speaker</span>
                   <span className="number">1</span>
                 </div>
               </div>
@@ -44,16 +43,29 @@ const SharonBg = () => {
                 <p>That’s all I have to say. I’ve put a lot of work into this event and my feet are killing me.</p>
               </div>
               <aside className="callout second">
-                <h2>Additional:</h2>
+              <div className="icon-title-container">
+              <div className="img-container-add"></div>
+                <h2>Additional info</h2>
+              </div>
+                
                 <p>As you are circulating among the guests, be professional and show very little emotion. Tell people that you will do whatever it takes to achieve your goals.</p>  
                 <p>When you talk to guests who are drinking wine, say that Luigi knows everything there is to know about wine. You depend upon him to select the perfect vintages for the events that you plan.</p>
                 <p>Make off the cuff comments about how difficult it is to be on your feet all night when you are coordinating your events. Say to people that you’ve changed from spike heeled shoes to flat-soled shoes because, “Those shoes were killing me.”</p>
             </aside>
             <aside className="callout">
+            <div className="icon-title-container">
+            <div className="img-container-clues"></div>
               <h2>Clues</h2>
+            </div>
               <p className="slogan">(The following information about you is in the clues that have been given to the guests.)</p>
-              <p>Have you noticed that Sharon Sharalike always dresses professionally, and with style? I’ve heard that a client of hers once complained that the stiletto heels she wore to an exhibit damaged the hardwood floors of the client’s gallery.</p>
-              <p>A few years ago, Sharon Sharalike was one of the top event planners on the East Coast. Libby LaBelle gave a scathing review to a gallery opening she’d planned and I heard that her business suffered. What a coincidence that they both ended up here.</p>
+              <div className="clue-container">
+                <div className="clue-image"></div>
+                <p>Have you noticed that Sharon Sharalike always dresses professionally, and with style? I’ve heard that a client of hers once complained that the stiletto heels she wore to an exhibit damaged the hardwood floors of the client’s gallery.</p>
+              </div>
+              <div className="clue-container">
+                <div className="clue-image"></div>
+                <p>A few years ago, Sharon Sharalike was one of the top event planners on the East Coast. Libby LaBelle gave a scathing review to a gallery opening she’d planned and I heard that her business suffered. What a coincidence that they both ended up here.</p>
+              </div>
             </aside>
             <aside className="downloads">
               <div className="dlpckg">

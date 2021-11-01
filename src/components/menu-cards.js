@@ -11,9 +11,13 @@ class MenuCards extends React.Component {
     return(
       <>
       <nav>
-          {/* Plot summary is the main page */}
-          {/* Use hidden modules for the sub-menus */}
           <ul className="menucard-nav">
+          <li>
+              <Link to="/app/volunteer">
+                <div className="folder"></div>
+                <span className="copy">How to Play</span>
+              </Link>
+            </li>
             <li>
               <Link to={`/app/${plotLink}`}>
                 <div className="folder"></div>
@@ -26,12 +30,7 @@ class MenuCards extends React.Component {
                 <span className="copy">Your Character</span>
               </Link>
             </li>
-            <li>
-              <Link to="/app/volunteer">
-                <div className="folder"></div>
-                <span className="copy">How to Play</span>
-              </Link>
-            </li>
+            
           </ul>
         </nav>
       </>

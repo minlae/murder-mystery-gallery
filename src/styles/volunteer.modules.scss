@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+.volunteer {
+  width: 70%;
+  margin: 0 auto;
+  h1,
+  h3 {
+    text-align: center;
+  }
+  p {
+    margin: 0;
+    font-size: $mediumFont;
+  }
+  strong {
+    font-weight: $bold;
+    font-family: $sansFont;
+    display: block;
+  }
+  .important {
+    color: $important;
+    font-size: $mediumFont;
+    text-align: center;
+    // margin: 0 auto;
+    // width: 80%;
+  }
+}
+
+ol.ordered {
+  // position: relative;
+
+  li.ordered-li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    position: relative;
+    .step-container {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: -60px;
+      top: -10px;
+      .step {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: $accentB;
+        border-radius: 50%;
+        &.alt {
+          background-color: $accentC;
+        }
+      }
+      .step-number {
+        position: absolute;
+        display: block;
+        left: 55%;
+        top: 52%;
+        transform: translate(-50%, -50%);
+        font-family: $displayFont;
+        font-size: $largeFont;
+      }
+    }
+  }
+  ul.unordered {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: $borderRadius;
+    background-color: $accentC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    li.unordered-li {
+      // list-style-type: none;
+      position: relative;
+      margin-bottom: 10px;
+      // :before {
+      //   content: "\1F95E";
+      //   margin-left: -20px;
+      //   margin-right: 10px;
+      // }
+    }
+  }
+}

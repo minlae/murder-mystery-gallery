@@ -10,14 +10,60 @@
     background-color: $accentB;
     width: 90px;
     height: 90px;
-    background-image: url(../images/high-heels64.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 10px;
+    &.sharon {
+      background-image: url(../images/high-heels64.png);
+    }
+    &.pete {
+      background-image: url(../images/knife-64.png);
+      background-size: 60px;
+      background-color: $accentC;
+    }
   }
   h1 {
     margin: 0;
     margin-top: 6%;
+  }
+  .img-container-clues {
+    @extend .img-container-title;
+    background-image: url(../images/magnifying-glass-64.png);
+    background-color: transparent;
+    background-size: 40px;
+    width: 48px;
+    height: 48px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .img-container-add {
+    @extend .img-container-clues;
+    background-image: url(../images/writing-64.png);
+  }
+}
+
+.clue-container {
+  display: flex;
+  margin-top: 15px;
+
+  p {
+    width: 80%;
+    margin: 0;
+  }
+
+  .clue-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/magnifier-64.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -59,7 +105,7 @@
       .info {
         font-family: $sansFont;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 0;
@@ -106,8 +152,16 @@
     aside.callout {
       margin-top: 7%;
       box-shadow: none;
+      .slogan {
+        font-weight: $regular;
+        font-style: italic;
+        font-size: $smallFont;
+        margin: 0;
+        display: inline;
+      }
+
       h2 {
-        margin-top: 20px;
+        margin-top: 15px;
       }
     }
     aside.callout.second {
@@ -157,7 +211,7 @@
   }
 }
 
-.outer-container-sharon {
+.outer-container-charbg {
   position: relative;
 }
 .palette-icon {
