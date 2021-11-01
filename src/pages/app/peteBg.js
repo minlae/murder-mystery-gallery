@@ -32,7 +32,7 @@ const PeteBg = () => {
               <div className="order">
                 <div className="info">
                   <span className="text">speaker</span>
-                  <span className="number">1</span>
+                  <span className="number">2</span>
                 </div>
               </div>
                 <h2>Say this when asked to speak:</h2>

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import CharLayout from "../../components/charlayout"
 import { getUser } from "../../services/auth"
 import "../../styles/volunteer.modules.scss"
@@ -63,7 +64,10 @@ const Volunteer = () => {
           <p>Any of the suspects (including you) could be the murderer. This means that one of you will be lying.</p>
           </li>
         </ol>
-        <strong className="important">Please come in character and arrive 15 minutes early so that any remaining questions can be answered.</strong>
+        <p className="important"><strong>Please come in character and arrive 15 minutes early so that any remaining questions can be answered.</strong></p>
+        <div className="next">
+          <h4><Link to={`../../app/${plotPage}`}>Next, get to know the plot! &gt;&gt;</Link></h4>
+        </div>
       </section>
     </CharLayout>
   )

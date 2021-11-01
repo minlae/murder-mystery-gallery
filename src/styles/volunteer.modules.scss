@@ -11,17 +11,17 @@
     margin: 0;
     font-size: $mediumFont;
   }
-  strong {
+  p.important {
     font-weight: $bold;
     font-family: $sansFont;
-    display: block;
-  }
-  .important {
     color: $important;
     font-size: $mediumFont;
     text-align: center;
-    // margin: 0 auto;
-    // width: 80%;
+  }
+  .next {
+    h4 {
+      text-align: right;
+    }
   }
 }
 

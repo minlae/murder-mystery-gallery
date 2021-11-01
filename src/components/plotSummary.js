@@ -80,7 +80,6 @@ class PlotSummary extends React.Component {
         <div className="container">
           <section className="column1">
           <h1>The Plot...</h1>
-          <p>INCLUDE LINKS TO DL SECTION</p>
           <p>Libby Labelle, art critic for the influential "Graphic News," used her vitriolic columns to destroy the careers of many artists. A good review from Libby meant instant success. A bad review could signal the end of the line for the career of even the most talented individual.</p>
           <p>And, Libby didn't limit her critiques to the art world. She'd regularly write scathing comments about the events she'd attended, panning the planning as well as the cuisine and wine selections. That's why, over the years, her list of eminent enemies grew. She was loved by her adoring fans and hated by the targets of her poisonous prose.</p>
           <p>When it was announced that impressionist artist Pete Casso was to preview an upcoming exhibit at the Creative Connection Art Gallery, Libby made a point of letting everyone know she'd be there to, once again, pen a negative review of Casso's latest masterpiece.</p>
@@ -96,6 +95,7 @@ class PlotSummary extends React.Component {
               <h3>Download letter</h3>
             </div>
           </aside>
+          <div className="next"><h4><Link to={`/app/${charLink}`}>Learn more about your character &gt;&gt;</Link></h4></div>
           </section>
   
           <section className="column2">
@@ -108,7 +108,8 @@ class PlotSummary extends React.Component {
                   <div className="charProfile">
                     <div className="imageContainer" style={{backgroundImage: `url(${characters[0].image})`,
                     backgroundRepeat: `no-repeat`,
-                    backgroundPosition: `center`
+                    backgroundPosition: `center`,
+                    backgroundSize: `50px`
                     }}></div>
                     <div className="profileTitle">
                       <h3><Link to={`/app/${charLink}`}>{fullName}</Link></h3>
