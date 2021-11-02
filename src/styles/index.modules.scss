@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+.index {
+  margin-top: 5%;
+  text-align: center;
+}
+
+h1.login {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.login-field {
+  width: 30%;
+  margin: 0 auto;
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      display: block;
+      font-family: $sansFont;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $smallestFont;
+      font-weight: $bold;
+      margin-bottom: 5px;
+    }
+
+    input {
+      height: 40px;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    input[type="password"] {
+      font-size: $mediumFont;
+    }
+
+    input.submit {
+      background-color: $accentA;
+      color: #fff;
+      border: 1px solid $accentA;
+      width: 25%;
+      margin: 0 auto;
+      font-family: $sansFont;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 import * as React from "react"
 import { navigate } from "gatsby"
 import { handleLogin, isLoggedIn, getUser } from "../services/auth"
+import "normalize.css"
 import Layout from "../components/layout"
+import "../styles/global.scss"
+import "../styles/index.modules.scss"
 
 
 class Login extends React.Component {
@@ -36,23 +39,25 @@ class Login extends React.Component {
     return (
       <>
         <Layout>
-          <h1>Log in</h1>
-          <form
-            method="post"
-            onSubmit={event => {
-              this.handleSubmit(event)
-            }}
-          >
-            <label>
-              Password
+          <h1 className="login">Log in</h1>
+          <div className="login-field">
+            <form
+              method="post"
+              onSubmit={event => {
+                this.handleSubmit(event)
+              }}
+            >
+              <label>
+                passcode
+              </label>
               <input
-                type="password"
-                name="password"
-                onChange={this.handleUpdate}
-              />
-            </label>
-            <input type="submit" value="Log In" />
-          </form>
+                  type="password"
+                  name="password"
+                  onChange={this.handleUpdate}
+                />
+              <input className="submit" type="submit" value="Log In" />
+            </form>
+          </div>
         </Layout>
       </>
     )

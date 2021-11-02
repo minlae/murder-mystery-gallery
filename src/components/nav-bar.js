@@ -7,7 +7,7 @@ export default function NavBar() {
   if (isLoggedIn()) {
     greetingMessage = `Files for ${getUser().firstname} ${getUser().lastname}`
   } else {
-    greetingMessage = "Welcome, guest"
+    greetingMessage = "Welcome"
   }
   return (
     <div className="mainNav"
@@ -20,17 +20,20 @@ export default function NavBar() {
     >
       <span>{greetingMessage}</span>
       <nav>
-        Event date: Fri, Nov 12th 6:00pm {"  "} | {"  "} 
+        Event date: Fri, Nov 12th 6:00pm {"  "}
         {isLoggedIn() ? (
-          <a
-            href="/"
-            onClick={event => {
-              event.preventDefault()
-              logout(() => navigate(`/`))
-            }}
-          >
-            Logout
-          </a>
+          <>
+           | {"  "} 
+            <a
+              href="/"
+              onClick={event => {
+                event.preventDefault()
+                logout(() => navigate(`/`))
+              }}
+            >
+              Logout
+            </a>
+          </>
         ) : null}
       </nav>
     </div>

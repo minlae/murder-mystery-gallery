@@ -1,8 +1,10 @@
 import * as React from "react"
-import "../styles/global.scss"
 import Layout from "../components/layout"
 import { navigate, Link } from "gatsby"
 import { getUser, isLoggedIn } from "../services/auth"
+import "../styles/global.scss"
+import "../styles/index.modules.scss"
+
 
 //remember run: npm run develop
 // styles
@@ -11,13 +13,13 @@ import { getUser, isLoggedIn } from "../services/auth"
 export default function Home() {
   return (
     <Layout>
-      <main>
-      <h1>Greetings {isLoggedIn() ? getUser().firstname : "Friend"}!</h1>
+      <main className="index">
+      <h1>Murder at the Art Gallery</h1>
+      {/* <h1>Welcome, {isLoggedIn() ? getUser().firstname : "Friend"}!</h1> */}
       <p>
         {isLoggedIn() ? navigate(`/app/${getUser().charname}`) : (
           <>
-            You should <Link to="login">log in</Link> to see restricted
-            content
+            <Link to="login">Click here to log in</Link> and see your character information
           </>
         )}
       </p>

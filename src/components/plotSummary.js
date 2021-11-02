@@ -4,7 +4,10 @@ import "../styles/plotsummary.modules.scss"
 import heels from "../images/high-heels64.png"
 import palette from "../images/color-palette-512.png"
 import knife from "../images/knife-64.png"
-
+import hat from "../images/hat-64.png"
+import cane from "../images/cane-64.png"
+import jewel from "../images/jewel-64.png"
+import fork from "../images/fork-64.png"
 
 class PlotSummary extends React.Component {
 
@@ -13,14 +16,14 @@ class PlotSummary extends React.Component {
       {
         "name" : "Lilac Labelle",
         "key" : "lilac",
-        // "image" : hat,
+        "image" : hat,
         "slogan" : "Libby's first cousin",
         "desc" : "Libby and Lilac grew up together and were inseparable until they fell in love with the same man, Brett Cutler. Libby won the man, but how long would the victory last, and what would be the repercussions?"
       },
       {
         "name" : "Brett Cutler",
         "key" : "brett",
-        // "image" : stick,
+        "image" : cane,
         "slogan" : "billionaire art dealer",
         "desc" : "He couldn't decide between Libby and Lilac, but Libby eventually won his affections. When she tossed him into the streets penniless, he was determined to return and show Libby what she had missed. How would he have gone about it?"
       },
@@ -41,14 +44,14 @@ class PlotSummary extends React.Component {
       {
         "name" : "Fiona Fakes",
         "key" : "fiona",
-        // "image" : jewel,
+        "image" : jewel,
         "slogan" : "art forger",
         "desc" : "A negative review by Libby put an end to her budding career as a legitimate fine artist. Then, last week in her column, Libby promised to expose Fiona's black market activities. Was Fiona's solution as simple as black and white?"
       },
       {
         "name" : "Luigi Lambrusco",
         "key" : "luigi",
-        // "image" : fork,
+        "image" : fork,
         "slogan" : "Italian chef",
         "desc" : "His cuisine and knowledge of wine made him a rising culinary star until he catered an event at which Libby was present. When Libby scoffed at his food fabrications, his business suffered. Could another such cut have been fatal?"
       }

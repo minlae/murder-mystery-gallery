@@ -66,7 +66,7 @@ const Volunteer = () => {
         </ol>
         <p className="important"><strong>Please come in character and arrive 15 minutes early so that any remaining questions can be answered.</strong></p>
         <div className="next">
-          <h4><Link to={`../../app/${plotPage}`}>Next, get to know the plot! &gt;&gt;</Link></h4>
+          <h4><Link to={`../../app/${plotPage}`}>Next, read the plot &gt;&gt;</Link></h4>
         </div>
       </section>
     </CharLayout>
