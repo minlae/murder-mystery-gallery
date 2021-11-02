@@ -89,6 +89,13 @@ strong {
     font-family: $sansFont;
   }
 }
+
+@media only screen and (max-width: 2880px) {
+  .wrapper {
+    max-width: 75%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .wrapper {
     max-width: 90%;

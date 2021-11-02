@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Layout>
       <main className="index">
-      <h1>Murder at the Art Gallery</h1>
+      <h1>Murder is a Fine Art</h1>
       {/* <h1>Welcome, {isLoggedIn() ? getUser().firstname : "Friend"}!</h1> */}
       <p>
         {isLoggedIn() ? navigate(`/app/${getUser().charname}`) : (

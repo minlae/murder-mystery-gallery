@@ -24,7 +24,7 @@ export const handleLogin = ({ password }) => {
         lastname: `Sharalike`,
         charBg: `sharonBg`
       })
-      case 'lastage':
+      case 'raincap':
       return setUser({
         charname: `brettC`,
         firstname: `Brett`,
