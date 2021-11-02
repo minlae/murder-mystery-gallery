@@ -72,7 +72,7 @@ const LilacBg = () => {
                 <p>My niece never misses reading Libby LaBelle’s column in “The Graphic News.” She knows what Libby looks like and once thought she’d spotted her at an event in Atlanta. She excitedly approached and said, “Libby, I’m a big fan.” The woman replied, “You’re mistaken, honey. My name is Lilac. Don’t ever call me Libby again.”</p>
               </div>
             </aside>
-            <aside className="downloads">
+            {/* <aside className="downloads">
               <div className="dlpckg">
                 <div className="file"></div>
                 <h3>Download press release</h3>
@@ -81,7 +81,7 @@ const LilacBg = () => {
                 <div className="file"></div>
                 <h3>Download letter</h3>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
         <img className="palette-icon" src={palette}/>

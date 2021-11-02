@@ -72,7 +72,7 @@ const PeteBg = () => {
                 <p>A close friend of mine from Paris heard that Casso had studied at the Sarbonne. She introduced herself to him in French and Casso just stared at her as if he didn’t know what she was saying.</p>
               </div>
             </aside>
-            <aside className="downloads">
+            {/* <aside className="downloads">
               <div className="dlpckg">
                 <div className="file"></div>
                 <h3>Download press release</h3>
@@ -81,7 +81,7 @@ const PeteBg = () => {
                 <div className="file"></div>
                 <h3>Download letter</h3>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
         <img className="palette-icon" src={palette}/>

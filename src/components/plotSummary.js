@@ -88,7 +88,7 @@ class PlotSummary extends React.Component {
           <p>When it was announced that impressionist artist Pete Casso was to preview an upcoming exhibit at the Creative Connection Art Gallery, Libby made a point of letting everyone know she'd be there to, once again, pen a negative review of Casso's latest masterpiece.</p>
           <p>Who would have suspected that the review would never be printed? For, in the middle of an acerbic attack on both the artwork and the occasion, Libby collapsed in a heap on the floor of the gallery, her worrisome word processor silenced forever.</p>
           <p>Did someone take the opportunity to do away with her explosive expletives? And, what past unknown indiscretions could have prompted the passion? It would take a palette of investigative skills to solve the case and identify the murderer.</p>
-          <aside className="downloads">
+          {/* <aside className="downloads">
             <div className="dlpckg">
               <div className="file"></div>
               <h3>Download press release</h3>
@@ -97,7 +97,7 @@ class PlotSummary extends React.Component {
               <div className="file"></div>
               <h3>Download letter</h3>
             </div>
-          </aside>
+          </aside> */}
           <div className="next"><h4><Link to={`/app/${charLink}`}>Learn more about your character &gt;&gt;</Link></h4></div>
           </section>
   

@@ -70,7 +70,7 @@ const FionaBg = () => {
                 <p>My nephew took an art class with Fiona Fakes and said she is proficient at all types of art. He was amazed at her skill not only with traditional art forms, but also with large brush portraiture and palette knives.</p>
               </div>
             </aside>
-            <aside className="downloads">
+            {/* <aside className="downloads">
               <div className="dlpckg">
                 <div className="file"></div>
                 <h3>Download press release</h3>
@@ -79,7 +79,7 @@ const FionaBg = () => {
                 <div className="file"></div>
                 <h3>Download letter</h3>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
         <img className="palette-icon" src={palette}/>

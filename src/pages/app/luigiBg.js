@@ -72,7 +72,7 @@ const LuigiBg = () => {
                 <p>I’ve noticed that Luigi Lambrusco considers himself to be a real connoisseur of wine. In fact, the wine menu at her restaurant is quite extensive. Naturally, he focuses on Italian vintages.</p>
               </div>
             </aside>
-            <aside className="downloads">
+            {/* <aside className="downloads">
               <div className="dlpckg">
                 <div className="file"></div>
                 <h3>Download press release</h3>
@@ -81,7 +81,7 @@ const LuigiBg = () => {
                 <div className="file"></div>
                 <h3>Download letter</h3>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
         <img className="palette-icon" src={palette}/>

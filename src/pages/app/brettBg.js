@@ -70,7 +70,7 @@ const BrettBg = () => {
                 <p>My sister said she recently met a man named Brett Cutler at a party. According to her, Cutler told the story of how he was once penniless as a result of a failed love affair. He said that since then he’d pulled himself together, become wealthy, and was trying to reunite with his “true love.”</p>
               </div>
             </aside>
-            <aside className="downloads">
+            {/* <aside className="downloads">
               <div className="dlpckg">
                 <div className="file"></div>
                 <h3>Download press release</h3>
@@ -79,7 +79,7 @@ const BrettBg = () => {
                 <div className="file"></div>
                 <h3>Download letter</h3>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
         <img className="palette-icon" src={palette}/>

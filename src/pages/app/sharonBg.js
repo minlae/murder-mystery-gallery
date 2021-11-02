@@ -67,7 +67,7 @@ const SharonBg = () => {
                 <p>A few years ago, Sharon Sharalike was one of the top event planners on the East Coast. Libby LaBelle gave a scathing review to a gallery opening she’d planned and I heard that her business suffered. What a coincidence that they both ended up here.</p>
               </div>
             </aside>
-            <aside className="downloads">
+            {/* <aside className="downloads">
               <div className="dlpckg">
                 <div className="file"></div>
                 <h3>Download press release</h3>
@@ -76,7 +76,7 @@ const SharonBg = () => {
                 <div className="file"></div>
                 <h3>Download letter</h3>
               </div>
-            </aside>
+            </aside> */}
           </section>
         </div>
         <img className="palette-icon" src={palette}/>

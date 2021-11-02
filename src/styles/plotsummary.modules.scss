@@ -91,6 +91,11 @@
     padding: 20px;
     border-radius: $borderRadius;
     h4 {
+      &.pete {
+        background-image: url(../images/knife-64.png);
+        background-size: 60px;
+        background-color: $accentC;
+      }
       // color: $bgAccent;
       margin-bottom: 2px;
       color: $headings;
