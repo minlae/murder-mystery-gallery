@@ -44,7 +44,7 @@ class Login extends React.Component {
             <form
               method="post"
               onSubmit={event => {
-                this.handleSubmit(event)
+                this.randomFunction(event)
               }}
             >
               <label>
